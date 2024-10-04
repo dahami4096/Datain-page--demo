@@ -1,0 +1,111 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensure body takes up full height of viewport */
+    margin: 0;
+    background-color: #01061b; /* Light background to contrast the container */
+  }
+
+/* Container for the entire page */
+.dtcontainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Center the title and add some spacing */
+  h1.text-center {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Label styling to add spacing and color */
+  .dtcontainer label {
+    font-size: 1.1rem;
+    color: #555;
+    margin-right: 10px;
+  }
+  
+  /* Dropdown menus */
+  .dmenu {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .dmenu select {
+    width: 250px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+  }
+  
+  .dmenu select:focus {
+    border-color: #007bff;
+  }
+  
+  /* Card for holding the chart */
+  .card {
+    background-color: #fff;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-body {
+    padding: 20px;
+  }
+  
+  .topl{
+    color: #4d5155;
+    font-weight: 100;
+  }
+  /* Button styling */
+  .btn-down {
+    background-color: #b2bbc4;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+    display: block;
+    margin: 20px auto 0;
+  }
+  
+  .btn-down:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Responsive layout */
+  @media (max-width: 768px) {
+    .dtcontainer {
+      padding: 15px;
+    }
+  
+    h1.text-center {
+      font-size: 2rem;
+    }
+  
+    .dmenu select {
+      width: 100%;
+    }
+  
+    .btn-down {
+      width: 100%;
+    }
+  }
+  
